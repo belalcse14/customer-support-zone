@@ -1,0 +1,128 @@
+[
+  {
+    "id": "#1001",
+    "title": "Unable to reset password",
+    "description": "User reports that the password reset process fails after submission.",
+    "customer": "John Carter",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-11"
+  },
+  {
+    "id": "#1002",
+    "title": "Payment gateway error",
+    "description": "Payment gateway returns an error code during checkout process.",
+    "customer": "Emma Watson",
+    "priority": "Critical Priority",
+    "status": "In Progress",
+    "createdAt": "2025-09-13"
+  },
+  {
+    "id": "#1003",
+    "title": "Mobile app crashing frequently",
+    "description": "The app crashes every time the user tries to view notifications.",
+    "customer": "Liam Turner",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-14"
+  },
+  {
+    "id": "#1004",
+    "title": "Feature request: Multi-language",
+    "description": "Customer requested adding Spanish and French language options.",
+    "customer": "Sophia Miller",
+    "priority": "Low Priority",
+    "status": "Closed",
+    "createdAt": "2025-09-08"
+  },
+  {
+    "id": "#1005",
+    "title": "Email verification link expired",
+    "description": "Verification link in email expires within 2 minutes of receiving it.",
+    "customer": "David Harris",
+    "priority": "Medium Priority",
+    "status": "Open",
+    "createdAt": "2025-09-12"
+  },
+  {
+    "id": "#1006",
+    "title": "Invoice shows wrong total",
+    "description": "Customer invoice total amount does not match selected services.",
+    "customer": "Emily Scott",
+    "priority": "Critical Priority",
+    "status": "In Progress",
+    "createdAt": "2025-09-16"
+  },
+  {
+    "id": "#1007",
+    "title": "Website loads slowly on mobile",
+    "description": "Mobile version of the website takes over 10 seconds to load.",
+    "customer": "James White",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-10"
+  },
+  {
+    "id": "#1008",
+    "title": "Unable to download PDF report",
+    "description": "User is unable to download generated PDF reports from dashboard.",
+    "customer": "Olivia Johnson",
+    "priority": "Medium Priority",
+    "status": "Open",
+    "createdAt": "2025-09-15"
+  },
+  {
+    "id": "#1009",
+    "title": "Lost data after app update",
+    "description": "Customer reports losing saved data after installing new update.",
+    "customer": "Lucas Brown",
+    "priority": "Critical Priority",
+    "status": "In Progress",
+    "createdAt": "2025-09-14"
+  },
+  {
+    "id": "#1010",
+    "title": "Account locked after failed login",
+    "description": "User account got locked after three incorrect password attempts.",
+    "customer": "Isabella Clark",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-13"
+  },
+  {
+    "id": "#1011",
+    "title": "Dark mode not saving preferences",
+    "description": "Dark mode setting resets after every logout and login.",
+    "customer": "Ethan Hall",
+    "priority": "Medium Priority",
+    "status": "Open",
+    "createdAt": "2025-09-09"
+  },
+  {
+    "id": "#1012",
+    "title": "Live chat not working",
+    "description": "Live chat feature on support page does not connect to agents.",
+    "customer": "Charlotte Walker",
+    "priority": "High Priority",
+    "status": "Open",
+    "createdAt": "2025-09-17"
+  },
+  {
+    "id": "#1013",
+    "title": "Broken image links on homepage",
+    "description": "Several images on homepage are broken and not loading properly.",
+    "customer": "Henry Adams",
+    "priority": "Low Priority",
+    "status": "Closed",
+    "createdAt": "2025-09-07"
+  },
+  {
+    "id": "#1014",
+    "title": "Two-factor authentication",
+    "description": "2FA codes are not being sent to users' registered devices.",
+    "customer": "Grace Turner",
+    "priority": "Critical Priority",
+    "status": "In Progress",
+    "createdAt": "2025-09-18"
+  }
+]
