@@ -1,14 +1,30 @@
 import React, { use } from "react";
+import TaskStatus from "../TaskStatus/TaskStatus";
 
-const Card = ({ fetchPromise }) => {
+const Card = ({
+  fetchPromise,
+  setProgressCount,
+  progressCount,
+  taskStatus,
+  setTaskStatus,
+}) => {
   const promiseData = use(fetchPromise);
-  console.log(promiseData);
+  // console.log(taskStatus);
 
   return (
-    <div className="grid grid-cols-2 gap-2.5 mt-4 ">
+    <div className="grid grid-cols-2 gap-4 mt-4 ">
       {promiseData.map((data) => (
-        <div key={data.id}>
-          <div className="h-[150px]  bg-gray-100 rounded-lg drop-shadow-lg">
+        <div
+          onClick={() => {
+            setProgressCount((progressCount += 1));
+            {
+              setTaskStatus([...taskStatus, data]);
+            }
+            console.log(data);
+          }}
+          key={data.id}
+        >
+          <div className="h-[150px] cursor-pointer bg-gray-100 rounded-lg drop-shadow-lg">
             <div className="flex justify-between p-2">
               <h1 className="font-semibold text-lg">{data.title}</h1>
               <button className="rounded-2xl py-1 px-4 bg-green-300">
