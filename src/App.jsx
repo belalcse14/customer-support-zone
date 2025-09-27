@@ -24,8 +24,9 @@ function App() {
 
   const removeTicketCard = (cards) => {
     const filteredCard = ticketCard.filter((card) => card.id !== cards.id);
-    console.log(filteredCard);
+
     setTicketCard(filteredCard);
+    console.log(filteredCard);
   };
 
   const removeTicket = (ticket) => {

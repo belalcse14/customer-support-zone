@@ -8,13 +8,11 @@ const TaskCard = ({
   progressCount,
   resolvedCount,
   setResolvedCount,
-  data,
   setResolvedTask,
   resolvedTask,
   ticketCard,
   setTicketCard,
   removeTicketCard,
-  tickets,
 }) => {
   const handleRemove = () => {
     removeTicket(task);
@@ -23,7 +21,7 @@ const TaskCard = ({
     // console.log(data);
     setResolvedTask([...resolvedTask, task]);
     setTicketCard([...ticketCard, task]);
-    removeTicketCard(tickets);
+    removeTicketCard(task);
     toast("Task marked as resolved!");
   };
 

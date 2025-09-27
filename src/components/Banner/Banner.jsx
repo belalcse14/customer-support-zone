@@ -1,6 +1,5 @@
 import React from "react";
 import vector1 from "../../assets/vector1.png";
-import vector2 from "../../assets/vector2.png";
 
 const Banner = ({ progressCount, resolvedCount }) => {
   return (
@@ -18,8 +17,8 @@ const Banner = ({ progressCount, resolvedCount }) => {
         />
       </div>
 
-      <div className="hero-content text-center flex-1 bg-base-200 bg-linear-to-br from-green-400 to-teal-500 text-white rounded-lg flex">
-        <img className="bg-no-repeat flex-1" src={vector1} alt="" />
+      <div className="hero-content text-center flex-1 bg-base-200 overflow-hidden bg-linear-to-br from-green-400 to-teal-500 text-white rounded-lg flex">
+        <img className="bg-no-repeat flex-1  " src={vector1} alt="" />
         <div className="max-w-md flex-1">
           <h1 className="text-l font-semibold">Resolved</h1>
           <p className="py-3 text-4xl font-bold">{resolvedCount}</p>

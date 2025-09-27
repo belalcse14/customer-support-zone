@@ -1,7 +1,7 @@
 import React from "react";
 import ResolvedCard from "../ResolvedCard/ResolvedCard";
 
-const ResolvedStatus = ({ setResolvedTask, resolvedTask }) => {
+const ResolvedStatus = ({ resolvedTask }) => {
   return (
     <div>
       {resolvedTask.length === 0 ? (

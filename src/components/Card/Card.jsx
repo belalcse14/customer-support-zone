@@ -8,9 +8,6 @@ const Card = ({
   progressCount,
   taskStatus,
   setTaskStatus,
-  ticketCard,
-  setTicketCard,
-  removeTicketCard,
 }) => {
   const promiseData = use(fetchPromise);
   // console.log(taskStatus);
