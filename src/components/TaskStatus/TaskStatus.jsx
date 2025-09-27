@@ -1,22 +1,48 @@
 import React from "react";
+import TaskCard from "../TaskCard/TaskCard";
 
-const TaskStatus = ({ taskStatus, setTaskStatus }) => {
+const TaskStatus = ({
+  taskStatus,
+  setTaskStatus,
+  removeTicket,
+  progressCount,
+  setProgressCount,
+  resolvedCount,
+  setResolvedCount,
+  resolvedTask,
+  setResolvedTask,
+  data,
+  ticketCard,
+  setTicketCard,
+  removeTicketCard,
+}) => {
   //   const ticketData = use(data);
-  console.log(taskStatus);
+  //   console.log(taskStatus);
 
   return (
     <div>
-      {taskStatus.map((task) => (
-        <div
-          key={task.id}
-          className=" bg-gray-100 p-3 mb-3 mt-5 rounded-lg shadow-md"
-        >
-          <h2 className="mb-2 font-medium text-lg">{task.title}</h2>
-          <button className="bg-green-500 text-white w-full py-1.5 font-semibold rounded-lg">
-            Complete
-          </button>
-        </div>
-      ))}
+      {taskStatus.length === 0 ? (
+        <p className="text-gray-500 pl-3 pt-3">No tasks in progress</p>
+      ) : (
+        taskStatus.map((task) => (
+          <TaskCard
+            key={task.id}
+            task={task}
+            data={data}
+            removeTicket={removeTicket}
+            taskStatus={taskStatus}
+            progressCount={progressCount}
+            setProgressCount={setProgressCount}
+            resolvedCount={resolvedCount}
+            setResolvedCount={setResolvedCount}
+            resolvedTask={resolvedTask}
+            setResolvedTask={setResolvedTask}
+            ticketCard={ticketCard}
+            setTicketCard={setTicketCard}
+            removeTicketCard={removeTicketCard}
+          ></TaskCard>
+        ))
+      )}
     </div>
   );
 };

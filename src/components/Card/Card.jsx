@@ -1,5 +1,6 @@
 import React, { use } from "react";
 import TaskStatus from "../TaskStatus/TaskStatus";
+import { toast } from "react-toastify";
 
 const Card = ({
   fetchPromise,
@@ -7,6 +8,9 @@ const Card = ({
   progressCount,
   taskStatus,
   setTaskStatus,
+  ticketCard,
+  setTicketCard,
+  removeTicketCard,
 }) => {
   const promiseData = use(fetchPromise);
   // console.log(taskStatus);
@@ -16,18 +20,24 @@ const Card = ({
       {promiseData.map((data) => (
         <div
           onClick={() => {
+            toast("Tickets Added in Progress!");
             setProgressCount((progressCount += 1));
             {
               setTaskStatus([...taskStatus, data]);
             }
-            console.log(data);
+
+            // console.log(data);
           }}
           key={data.id}
         >
           <div className="h-[150px] cursor-pointer bg-gray-100 rounded-lg drop-shadow-lg">
             <div className="flex justify-between p-2">
               <h1 className="font-semibold text-lg">{data.title}</h1>
-              <button className="rounded-2xl py-1 px-4 bg-green-300">
+              <button
+                className={`rounded-2xl py-1 px-4 ${
+                  data.status === "Open" ? "bg-green-200" : "bg-amber-200"
+                }`}
+              >
                 {data.status}
               </button>
             </div>
@@ -47,6 +57,7 @@ const Card = ({
           </div>
         </div>
       ))}
+
       {/* <div className="h-[150px]  bg-gray-100">
         <div className="flex justify-between p-2">
           <h1 className="font-semibold text-lg">Login Issue</h1>

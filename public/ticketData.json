@@ -32,7 +32,7 @@
     "description": "Customer requested adding Spanish and French language options.",
     "customer": "Sophia Miller",
     "priority": "Low Priority",
-    "status": "Closed",
+    "status": "In Progress",
     "createdAt": "2025-09-08"
   },
   {
@@ -113,7 +113,7 @@
     "description": "Several images on homepage are broken and not loading properly.",
     "customer": "Henry Adams",
     "priority": "Low Priority",
-    "status": "Closed",
+    "status": "In Progress",
     "createdAt": "2025-09-07"
   },
   {
