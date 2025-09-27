@@ -3,7 +3,6 @@ import TaskCard from "../TaskCard/TaskCard";
 
 const TaskStatus = ({
   taskStatus,
-  setTaskStatus,
   removeTicket,
   progressCount,
   setProgressCount,
